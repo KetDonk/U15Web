@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, courseList, course, h3, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        courseList = document.getElementsByClassName("course-list")[0];
+        courses = courseList.getElementsByClassName("course");
+
+        // Loop through all courses, and hide those whose heading does not match the search query
+        for (i = 0; i < courses.length; i++) {
+            h3 = courses[i].getElementsByTagName("h3")[0];
+            if (h3.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                courses[i].style.display = "";
+            } else {
+                courses[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+<style>
+    h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .course {
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Style the search box */
+    #mySearch {
+        width: 100%;
+        font-size: 18px;
+        padding: 11px;
+        border: 1px solid #ddd;
+    }
+
+    /* Style the navigation menu */
+    #myMenu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Style the navigation links */
+    #myMenu li a {
+        padding: 12px;
+        text-decoration: none;
+        color: black;
+        display: block
+    }
+
+    #myMenu li a:hover {
+        background-color: #eee;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+        padding: 20px;
+    }
+
+    .course {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px grey;
+        flex-grow: 2;
+        flex-shrink: 1;
+        width: 30%;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .course-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+</style>
+
+<body></body>
+<nav>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <div class="right-links">
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </div>
+</nav>
+<div class="parallax-bg">
+    <div class="parallax-content"></div>
+    <h1 class="heading">Burnley College Available Courses</h1>
+</div>
+<div class="container">
+    <h2>Courses</h2>
+    <div class="search-container">
+        <form action="">
+            <input type="text" id="mySearch" placeholder="Search courses..." onkeyup="myFunction()">
+        </form>
+    </div>
+    <div class="course-list">
+        <div class="course">
+            <h3>BTEC Uniformed Services</h3>
+            <p style="font-size:14px;">This course provides students with a comprehensive introduction to the
+                uniformed services industry, including roles and responsibilities, organizational structure, and key
+                skills and knowledge. Topics covered may include leadership and teamwork, communication, law and
+                ethics, and health and safety.</p>
+        </div>
+        <div class="course">
+            <h3>T Level Travel and Tourism</h3>
+            <p style="font-size:14px;">This T Level provides students with an in-depth understanding of the travel
+                and tourism industry, including customer service, marketing and promotion, and tour operations.
+                Students will develop a range of practical skills, including travel and tourism product knowledge,
+                sales and marketing, and event planning and management.</p>
+        </div>
+        <div class="course">
+            <h3>BTEC lvl 2 Exploring Tourism, Hospitality and Events</h3>
+            <p style="font-size:14px;">This course provides students with an introduction to the exciting world of
+                tourism, hospitality, and events. Students will learn about the different aspects of these
+                industries, including customer service, event planning, and the impact of tourism on local
+                communities. They will also gain practical skills in areas such as food preparation and service,
+                housekeeping, and front office operations.</p>
+        </div>
+        <div class="course">
+            <h3>BTEC lvl 1 Travel and Tourism</h3>
+            <p style="font-size:14px;">This course provides students with a basic understanding of the travel and
+                tourism industry, including key destinations, types of holidays, and the different roles within the
+                industry. Students will develop practical skills in areas such as customer service, sales and
+                marketing, and event planning and management.</p>
+        </div>
+        <div class="course">
+            <h3>BTEC lvl 1 Business</h3>
+            <p style="font-size:14px;">This course provides students with an introduction to the fundamentals of
+                business, including finance, marketing, and operations management. Students will develop basic
+                skills in areas such as entrepreneurship, leadership, and teamwork, and gain an understanding of the
+                ethical and legal issues facing businesses today.</p>
+        </div>
+        <div class="course">
+            <h3>BTEC lvl 2 Business and Marketing</h3>
+            <p style="font-size:14px;">This course provides students with a comprehensive understanding of the
+                principles and practices of business and marketing. Students will learn about the different aspects
+                of marketing, including market research, branding, and advertising, and will develop practical
+                skills in areas such as market analysis, product development, and sales and marketing.</p>
+        </div>
+    </div>
+    </body>
+
+</html>
