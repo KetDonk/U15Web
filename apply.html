@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 
 </head>
 
 <body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="courses.html">Available Courses</a>
+        <a href="aboutUs.html">About us</a>
+        <div class="right-links">
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </div>
+    </nav>
+
+    <h2 style="color: black;text-align: center;">Burnley College Application form</h1>
 
     <form>
         <label for="name">Name:</label>
@@ -87,32 +99,102 @@
         </table>
         <table>
             <tr>
-              <td>
-                <label for="choices1">Choose one:</label>
-                <select id="choices1" name="choices1">
-                    <option value="choice1">BTEC Uniformed Services</option>
-                    <option value="choice2">T Level Travel and Tourism</option>
-                    <option value="choice3">BTEC lvl 2 Exploring Tourism, Hospitality and Events</option>
-                    <option value="choice4">BTEC lvl 1 Travel and Tourism</option>
-                    <option value="choice5">BTEC lvl 1 Business</option>
-                    <option value="choice6">BTEC lvl 2 Business and Marketing</option>
-                </select>
-              </td>
-              <td>
-                <label for="choices2">Choose one:</label>
-                <select id="choices2" name="choices2">
-                    <option value="choice1">BTEC Uniformed Services</option>
-                    <option value="choice2">T Level Travel and Tourism</option>
-                    <option value="choice3">BTEC lvl 2 Exploring Tourism, Hospitality and Events</option>
-                    <option value="choice4">BTEC lvl 1 Travel and Tourism</option>
-                    <option value="choice5">BTEC lvl 1 Business</option>
-                    <option value="choice6">BTEC lvl 2 Business and Marketing</option>
-                </select>
-              </td>
+                <td>
+                    <label for="choices1">Main Choice:</label>
+                    <select id="choices1" name="choices1">
+                        <option value="choice1">BTEC Uniformed Services</option>
+                        <option value="choice2">T Level Travel and Tourism</option>
+                        <option value="choice3">BTEC lvl 2 Exploring Tourism, Hospitality and Events</option>
+                        <option value="choice4">BTEC lvl 1 Travel and Tourism</option>
+                        <option value="choice5">BTEC lvl 1 Business</option>
+                        <option value="choice6">BTEC lvl 2 Business and Marketing</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="choices2">Secondary choice:</label>
+                    <select id="choices2" name="choices2">
+                        <option value="choice1">BTEC Uniformed Services</option>
+                        <option value="choice2">T Level Travel and Tourism</option>
+                        <option value="choice3">BTEC lvl 2 Exploring Tourism, Hospitality and Events</option>
+                        <option value="choice4">BTEC lvl 1 Travel and Tourism</option>
+                        <option value="choice5">BTEC lvl 1 Business</option>
+                        <option value="choice6">BTEC lvl 2 Business and Marketing</option>
+                    </select>
+                </td>
             </tr>
-          </table>
+        </table>
         <input type="submit" value="Submit">
     </form>
 </body>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333333;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #333333;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #555555;
+    }
+</style>
 
 </html>
