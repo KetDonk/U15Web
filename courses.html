@@ -50,30 +50,26 @@
         font-size: 14px;
     }
 
-    /* Style the search box */
-    #mySearch {
+    .Search {
         width: 100%;
         font-size: 18px;
         padding: 11px;
-        border: 1px solid #ddd;
     }
 
-    /* Style the navigation menu */
-    #myMenu {
+    .Menu {
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
 
-    /* Style the navigation links */
-    #myMenu li a {
+    .Menu li a {
         padding: 12px;
         text-decoration: none;
         color: black;
         display: block
     }
 
-    #myMenu li a:hover {
+    .Menu li a:hover {
         background-color: #eee;
     }
 
@@ -83,6 +79,10 @@
         justify-content: center;
         gap: 10px 20px;
         padding: 20px;
+    }
+
+    .container2 {
+        width: 50%;
     }
 
     .course {
@@ -108,7 +108,7 @@
 
 <body></body>
 <nav>
-    <a href="#">Link 1</a>
+    <a href="./index.html">Home</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
     <div class="right-links">
@@ -121,11 +121,13 @@
     <h1 class="heading">Burnley College Available Courses</h1>
 </div>
 <div class="container">
-    <h2>Courses</h2>
-    <div class="search-container">
-        <form action="">
-            <input type="text" id="mySearch" placeholder="Search courses..." onkeyup="myFunction()">
-        </form>
+    <div class="container2">
+        <h2>Courses</h2>
+        <div class="search-container">
+            <form action="">
+                <input type="text" class="Search" placeholder="Search courses..." onkeyup="myFunction()">
+            </form>
+        </div>
     </div>
     <div class="course-list">
         <div class="course">
