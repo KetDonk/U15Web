@@ -5,30 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Courses</title>
+    <meta name="description" content="This page is about the College">
+    <meta name="keywords" content="Burnley, Burnley College, Education, Courses, College,
+    Higher Education, Apprenticeships, BTEC, TLevls, Computer science, Travel and Tourism">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<script>
-    function myFunction() {
-        // Declare variables
-        var input, filter, courseList, course, h3, i;
-        input = document.getElementById("mySearch");
-        filter = input.value.toUpperCase();
-        courseList = document.getElementsByClassName("course-list")[0];
-        courses = courseList.getElementsByClassName("course");
-
-        // Loop through all courses, and hide those whose heading does not match the search query
-        for (i = 0; i < courses.length; i++) {
-            h3 = courses[i].getElementsByTagName("h3")[0];
-            if (h3.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                courses[i].style.display = "";
-            } else {
-                courses[i].style.display = "none";
-            }
-        }
-    }
-</script>
 
 <style>
     h2 {
@@ -113,7 +95,7 @@
         text-align: center;
         border-radius: 10px;
         margin: 0 auto;
-        float: right;
+
         position: relative;
         bottom: 0;
         right: 0;
@@ -125,9 +107,11 @@
     <a href="./index.html">Home</a>
     <a href="courses.html">Available Courses</a>
     <a href="aboutUs.html">About us</a>
+    <a href="extraCurricular.html">ECA</a>
     <div class="right-links">
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
+        <a href="contact.html">Contact</a>
+        <a href="division.html">BPS</a>
+        <a href="apply.html">Apply</a>
     </div>
 </nav>
 <div class="parallax-bg">
@@ -138,9 +122,6 @@
     <div class="container2">
         <h2>Courses</h2>
         <div class="search-container">
-            <form action="">
-                <input type="text" class="Search" placeholder="Search courses..." onkeyup="myFunction()">
-            </form>
         </div>
     </div>
     <div class="course-list">
@@ -161,7 +142,7 @@
             <a href="apply.html" class="apply">Apply</a>
         </div>
         <div class="course">
-            <h3>BTEC lvl 2 Exploring Tourism, Hospitality and Events</h3>
+            <h3>BTEC lvl 2 Exploring Tourism</h3>
             <p style="font-size:14px;">This course provides students with an introduction to the exciting world of
                 tourism, hospitality, and events. Students will learn about the different aspects of these
                 industries, including customer service, event planning, and the impact of tourism on local
